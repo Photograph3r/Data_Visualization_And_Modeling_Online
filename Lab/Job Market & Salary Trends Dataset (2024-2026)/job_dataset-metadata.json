@@ -1,0 +1,56 @@
+{
+  "title": "Job Market & Salary Trends Dataset (2024-2026)",
+  "id": "hamnamunir/job-market-salary-trends",
+  "licenses": [{"name": "CC0-1.0"}],
+  "keywords": [
+    "job market", "salary", "employment", "career", "remote work",
+    "data science jobs", "salary prediction", "HR analytics",
+    "labor market", "AI automation", "gender pay gap", "hiring trends",
+    "regression", "classification", "EDA"
+  ],
+  "collaborators": [],
+  "data": [
+    {
+      "description": "Main dataset containing 10,000 synthetic global job market records from 2024 to 2026. Covers 30 job titles, 15 industries, 15 countries, and 32 features including compensation, satisfaction, AI adoption, work model, and hiring patterns.",
+      "name": "job_market_salary_trends.csv",
+      "columns": [
+        {"name": "job_id", "description": "Unique job record identifier in format JOB000001 to JOB010000."},
+        {"name": "year", "description": "Year of the job posting or survey record. Values: 2024, 2025, 2026."},
+        {"name": "quarter", "description": "Quarter of the year for the job record. Values: Q1, Q2, Q3, Q4."},
+        {"name": "job_title", "description": "Specific professional job title such as Software Engineer, Data Scientist, or Product Manager."},
+        {"name": "job_category", "description": "Broad occupational category. Values: Tech & Engineering, Data & AI, Design & Creative, Business & Management, Finance & Legal, Marketing & Sales, Operations & HR."},
+        {"name": "industry", "description": "Industry sector of the employer. 15 sectors including Technology, Finance & Banking, Healthcare, Education, E-commerce, and more."},
+        {"name": "country", "description": "Country where the job is located. 15 countries including USA, UK, Germany, India, Pakistan, UAE, and more."},
+        {"name": "experience_level", "description": "Seniority level of the role. Values: Entry Level (0-2 yrs), Junior (2-4 yrs), Mid-level (4-7 yrs), Senior (7-12 yrs), Lead/Principal (12+ yrs)."},
+        {"name": "years_of_experience", "description": "Total years of professional work experience. Range: 0 to 25."},
+        {"name": "education_level", "description": "Highest educational qualification. Values: High School, Associate Degree, Bachelor's Degree, Master's Degree, PhD, Bootcamp/Self-taught."},
+        {"name": "employment_type", "description": "Nature of the employment contract. Values: Full-time, Part-time, Contract, Freelance, Remote Full-time."},
+        {"name": "work_model", "description": "Physical work arrangement. Values: On-site, Remote, Hybrid."},
+        {"name": "company_size", "description": "Size of the hiring company by employee count. Values: Startup (1-50), Small (51-200), Medium (201-1000), Large (1001-5000), Enterprise (5000+)."},
+        {"name": "salary_usd_annual", "description": "Annual base salary normalized to USD for cross-country comparison. Does not include bonuses or equity."},
+        {"name": "salary_local_currency", "description": "Annual salary expressed in the local currency of the job location."},
+        {"name": "currency", "description": "ISO 4217 currency code for the local salary. Examples: USD, GBP, EUR, INR, PKR, AED, SGD."},
+        {"name": "primary_skills", "description": "Main technical or professional skill set associated with the role. Examples: Python/SQL/ML, JavaScript/React, AWS/Docker/Terraform."},
+        {"name": "required_skills_count", "description": "Number of distinct skills listed as required for the position. Range: 2 to 8."},
+        {"name": "benefits_score", "description": "Employer benefits quality score rated by the employee on a scale of 1 (Very Poor) to 10 (Excellent)."},
+        {"name": "job_satisfaction", "description": "Overall job satisfaction reported by the employee. Values: Very Dissatisfied, Dissatisfied, Neutral, Satisfied, Very Satisfied."},
+        {"name": "salary_satisfaction", "description": "Employee satisfaction with their compensation. Values: Very Dissatisfied, Dissatisfied, Neutral, Satisfied, Very Satisfied."},
+        {"name": "work_life_balance_score", "description": "Self-rated work-life balance score on a scale of 1 (Very Poor) to 10 (Excellent)."},
+        {"name": "career_growth_score", "description": "Perceived career advancement opportunities rated on a scale of 1 (Very Poor) to 10 (Excellent)."},
+        {"name": "remote_work_preference", "description": "Employee preference for remote work. Values: Strongly Prefer Remote, Prefer Remote, No Preference, Prefer On-site, Strongly Prefer On-site."},
+        {"name": "ai_tools_usage", "description": "Frequency of AI tools usage in daily work. Values: Never, Rarely, Sometimes, Often, Daily."},
+        {"name": "automation_risk_level", "description": "Assessed risk level of the job role being automated. Values: Very Low, Low, Medium, High, Very High."},
+        {"name": "visa_sponsorship_available", "description": "Whether the employer offers visa sponsorship for the role. Values: Yes, No."},
+        {"name": "gender", "description": "Gender identity of the job holder. Values: Male, Female, Non-binary, Prefer not to say."},
+        {"name": "age_group", "description": "Age bracket of the job holder. Values: 18-24, 25-34, 35-44, 45-54, 55+."},
+        {"name": "certifications_count", "description": "Number of professional certifications held by the employee. Range: 0 to 10."},
+        {"name": "job_posting_platform", "description": "Platform or channel where the job was posted or found. Values: LinkedIn, Indeed, Glassdoor, Company Website, Referral, Kaggle Jobs, Other."},
+        {"name": "hiring_time_days", "description": "Number of days from job posting to offer acceptance. Range: 3 to 180 days."}
+      ]
+    },
+    {
+      "description": "Full dataset documentation including schema, use cases, salary methodology, research questions, citation, and author information.",
+      "name": "README.md"
+    }
+  ]
+}
